@@ -5,6 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make a Mark by Vihaan</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to right, #ff7e5f, #ec9706, #fa8128); /* Vibrant gradient background */
+            color: #333;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(to right, #ff7e5f, #ec9706); /* Gradient background for banner */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #333;
+        }
+        .navbar .logo {
+            width: 100px;
+        }
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            transition: background 0.3s, border-bottom 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .navbar nav ul li a:hover,
+        .navbar nav ul li a:focus {
+            background: #ff7e5f;
+            border-bottom: 3px solid #ec9706;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar nav ul li {
+                margin: 10px 0;
+            }
+            .content h1 {
+                font-size: 1.5em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="banner">

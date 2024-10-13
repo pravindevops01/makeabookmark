@@ -1,65 +1,112 @@
-*{
-     margin:0;
-	 padding:0;
-	 font-family:Times New Roman;
-
-}
-.banner{
-	 width:100%;
-	 height:100vh;
-	 background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(back2.jpg);
-	 background-size:cover;
-	 background-position:center;
-}
-.navbar{
-	width:85%;
-	margin:auto;
-	padding:35px 0;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-}
-.logo{
-	width:120px;
-	cursor:pointer;
-}
-.navbar ul li{
-	list-style:none;
-	display:inline-block;
-	margin:0 20px;
-	position:relative;
-}
-.navbar ul li a{
-	text-decoration:none;
-	color:#fff;
-	text-transform:uppercase;
-}
-.navbar ul li::after{
-	content:'';
-	height:3px;
-	width:0%;
-	background:#009688;
-	position:absolute;
-	left:0;
-	bottom:-10px;
-	transition: 0.5s;
-}
-.navbar ul li:hover::after{
-	width:100%;
-}
-.content{
-	width:100%;
-	position: absolute;
-	top:50%;
-	transform:translateY(-50%);
-	text-align: center;
-	color: #fff;
-}
-.about us{
-	width:100%;
-	position: absolute;
-	top:50%;
-	transform:translateY(-50%);
-	text-align: center;
-	color: black
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Mark by Vihaan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            background-image: url('background.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            background: ); /* Semi-transparent background */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #333;
+        }
+        .navbar .logo {
+            width: 100px;
+        }
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            transition: background 0.3s, border-bottom 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .navbar nav ul li a:hover,
+        .navbar nav ul li a:focus {
+            border-bottom: 3px solid blue;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        }
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar nav ul li {
+                margin: 10px 0;
+            }
+            .content h1 {
+                font-size: 1.5em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo 1.jpg" class="logo" alt="Make a Mark Logo">
+            <nav>
+                <ul>
+                    <li><a href="Handmade Bookmarks.html">Handmade Bookmarks</a></li>
+                    <li><a href="Vintage Bookmarks.html">Vintage Bookmarks</a></li>
+                    <li><a href="Magnetic Bookmarks.html">Magnetic Bookmarks</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>What is Make a Mark?</h1>
+        <p>Make a Mark is a company that offers you a wide range of bookmarks. 
+        From watercolour bookmarks to vintage coffee bookmarks, we sell every type of bookmark. 
+        This company was started by two school-going boys, Vihaan Upganlawar and Naman Lakhwani. 
+        It now sells up to 40 different varieties of bookmarks and also fridge magnets. 
+        We have a vivid range of custom bookmarks and are going to launch a series of magnetic bookmarks. 
+        We offer a range of wildlife bookmarks and will also be launching a Footballers Bookmark collection. 
+        We use only the best quality paper for our works and sell many handmade bookmarks at affordable prices.</p>
+    </div>
+</body>
+</html>
